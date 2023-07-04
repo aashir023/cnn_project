@@ -11,8 +11,8 @@ transform = transforms.Compose([
 ])
 
 # Load the saved model
-model = torch.load(r"C:\Users\Aashir\Desktop\Internship\work_folder\pytorch_nn\streamlit\vgg_model.pt", map_location=torch.device('cpu'))
-model.eval()
+model_path = "vgg_model.pt"
+model = torch.load(model_path, map_location=torch.device('cpu'))model.eval()
 
 # Define the class labels (if available)
 class_labels = [
