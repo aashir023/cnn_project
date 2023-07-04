@@ -12,7 +12,8 @@ transform = transforms.Compose([
 
 # Load the saved model
 model_path = "vgg_model.pt"
-model = torch.load(model_path, map_location=torch.device('cpu'))model.eval()
+model = torch.load(model_path, map_location=torch.device('cpu'))
+model.eval()
 
 # Define the class labels (if available)
 class_labels = [
